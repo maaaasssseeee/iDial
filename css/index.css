@@ -308,3 +308,20 @@ footer {
 }
 
 /* FIN SIDE BAR */
+
+/* IMAGENES BOX */
+
+.img-box {
+    width: 400px;
+    height: auto;
+}
+
+.imagen-derecha {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.txt-destacar {
+    font-weight: bolder;
+}
