@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Momo+Trust+Display&family=Roboto:ital,wght@0,300;1,300&display=swap');
+@import url(/css/index.css);
+
+.header-index {
+    background-image: url(/img/header-prevencion.jpg);
+}
