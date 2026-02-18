@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Momo+Trust+Display&family=Roboto:ital,wght@0,300;1,300&display=swap');
 
 :root {
+    --coloradv: #e9e5cd;
     --colorfondos: #f5f1da;
     --colorfondodos: #E5D3B3;
     --negrononegro: #2c2c2c;
@@ -125,6 +126,18 @@ body {
 
 /* MAIN */
 
+.div-adv {
+    background-color: var(--coloradv);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+    gap: 20px;
+}
+
 .main-informacion {
     background-color: var(--colorfondos);
     min-height: 100vh;
@@ -164,6 +177,7 @@ body {
 .info-imagen {
     display: flex;
     flex-direction: row;
+    gap: 50px;
 }
 
 .info-imagen-info {
