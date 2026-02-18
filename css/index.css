@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Momo+Trust+Display&family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+:root {
+    --colorfondos: #f5f1da;
+    --colorfondodos: #E5D3B3;
+    --negrononegro: #2c2c2c;
+    --sombra: 0px 0px 20px #000;
+    --sombranav: 0px 0px 20px #0000007e;
+    --titulosinfo: #204051;
+}
+
+body {
+    margin: 0;
+}
+
+.diseno-menu {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--negrononegro);
+}
+
+.header-index {
+    background-image: url(/img/header.jpg);
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-index {
+    background-color: var(--colorfondos);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-shadow: var(--sombranav);
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.img-nav {
+    width: 50px;
+}
+
+.nav-logo {
+    transition: 0.5s;
+    font-family: "Momo Trust Display", sans-serif;
+    color: var(--negrononegro);
+    font-size: 40px;
+    display: flex;
+    font-weight: lighter;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.section-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+}
+
+.div-titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-gato {
+    width: 300px;
+    background-color: var(--sombra);
+}
+
+.titulo-header {
+    font-family: "Momo Trust Display", sans-serif;
+    color: var(--colorfondos);
+    text-shadow: var(--sombra);
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.subtitulo-header {
+    font-family: "Gabarito", sans-serif;
+    text-shadow: var(--sombra);
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--colorfondos);
+}
+
+.nav-logo:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.android-nav {
+    transition: 0.5s;
+    color: var(--negrononegro);
+    font-size: 35px;
+}
+
+.android-nav:hover {
+    transition: 0.5s;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.div-logo-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    will-change: transform;
+    transition: transform 0.5s ease-out;
+}
+
+/* MAIN */
+
+.main-informacion {
+    background-color: var(--colorfondos);
+    min-height: 100vh;
+}
+
+.main-contenido {
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+}
+
+.main-titulos {
+    color: var(--titulosinfo);
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 40px;
+}
+
+.main-subtitulos {
+    color: var(--titulosinfo);
+    font-family: "Gabarito", sans-serif;
+    font-size: 20px;
+}
+
+.main-contenido-intro-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-parrafo {
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+}
+
+.info-imagen {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-imagen-info {
+    flex: 1;
+}
+
+.info-imagen-imagen {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECTION DESCARGA NUESTRA APP */
+
+.section-descarga {
+    background-image: url(/img/section-descarga.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.section-descarga-texto {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-descarga-enlace {
+    transition: 0.5s;
+    background-color: var(--colorfondos);
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    border-radius: 10px;
+    color: var(--negrononegro);
+}
+
+.section-descarga-enlace:hover {
+    transition: 0.5s;
+    box-shadow: var(--sombra);
+    transform: scale(1.05);
+}
+
+.idial-desc {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: var(--colorfondos);
+    text-shadow: var(--sombra);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 20px;
+    background-color: var(--colorfondos);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* SIDE BAR */
+
+/* Estilos básicos del Nav */
+.navbar {
+    background: var(--negrononegro);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    transition: 0.5s;
+    color: var(--negrononegro)
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.menu-btn:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+/* Estilos del Menú Lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Escondido a la izquierda */
+    width: 250px;
+    height: 100%;
+    background: var(--colorfondodos);
+    transition: 0.3s; /* Animación suave */
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+/* Clase que aplicaremos con JS para mostrarlo */
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar a {
+    font-family: "Roboto", sans-serif;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--negrononegro);
+    display: block;
+}
+
+.sidebar a:hover {
+    font-weight: bolder;
+}
+
+.close-btn {
+    transition: 0.5s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+}
+
+.close-btn:hover {
+    transition: 0.5s;
+    transform: rotate(360deg);
+    text-shadow: var(--sombra);
+}
+
+/* FIN SIDE BAR */
