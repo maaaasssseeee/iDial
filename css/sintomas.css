@@ -7,20 +7,6 @@
 
 .section-interesar {
     background-image: url(/img/interesate-sintomas.png);
-    min-height: 100vh;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.interesate-contenido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 200px;
 }
 
 .adv {
@@ -72,5 +58,11 @@
     }
     .main-titulos {
         font-size: 25px;
+    }
+    .header-index {
+        background-image: url(/img/header-sintomasmobile.png);
+    }
+    .section-interesar {
+        background-image: url(/img/interesate-sintomasmobile.png);
     }
 }

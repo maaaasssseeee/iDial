@@ -53,4 +53,10 @@
     .main-titulos {
         font-size: 25px;
     }
+    .header-index {
+        background-image: url(/img/header-prevencionmobile.png);
+    }
+    .section-interesar {
+        background-image: url(/img/interesate-prevencionmobile.png);
+    }
 }

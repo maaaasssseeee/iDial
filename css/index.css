@@ -23,7 +23,7 @@ body {
 }
 
 .header-index {
-    background-image: url(/img/header.jpg);
+    background-image: url(/img/header-index.jpg);
     background-size: cover;
     min-height: 90vh;
     display: flex;
@@ -347,4 +347,86 @@ footer {
 
 li {
     padding-bottom: 20px;
+}
+
+.section-interesar {
+    background-image: url(/img/section-descarga.png);
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interesate-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 200px;
+}
+
+.box-download {
+    margin: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .main-contenido {
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+    }
+    .info-parrafo{
+        font-size: 15px;
+    }
+    .adv {
+        font-size: 10px;
+    }
+    .info-imagen {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .img-box {
+        width: 300px;
+        height: auto;
+    }
+    .info-imagen-imagen {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .titulo-header {
+        font-size: 30px;
+    }
+    .adv {
+        font-size: 13px;
+    }
+    .div-adv {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .interesate-contenido {
+        margin: 30px;
+    }
+    .subtitulo-header {
+        font-size: 15px;
+    }
+    .main-titulos {
+        font-size: 25px;
+    }
+    .logo-gato {
+        width: 200px;
+        height: auto;
+    }
+    .div-logo-titulo {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .section-interesar {
+        background-image: url(/img/section-descargamobile.png);
+    }
+    .header-index {
+        background-image: url(/img/header-indexmobile.jpg);
+    }
 }
