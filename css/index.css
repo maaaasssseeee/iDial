@@ -41,7 +41,7 @@ body {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 999;
 }
 
 .img-nav {
@@ -260,38 +260,35 @@ footer {
 
 /* SIDE BAR */
 
-/* Estilos básicos del Nav */
-.navbar {
-    background: var(--negrononegro);
-    color: white;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
+.bx-menu {
+    color: #000;
+    font-size: 20px;
 }
 
-.menu-btn {
-    transition: 0.5s;
-    color: var(--negrononegro)
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-
-.menu-btn:hover {
-    transition: 0.5s;
-    transform: scale(1.2);
-}
-
-/* Estilos del Menú Lateral */
 .sidebar {
     position: fixed;
     top: 0;
-    left: -250px; /* Escondido a la izquierda */
+    left: -290px; /* Escondido a la izquierda */
     width: 250px;
-    height: 100%;
+    height: 100vh;
     background: var(--colorfondodos);
     transition: 0.3s; /* Animación suave */
-    padding-top: 60px;
     z-index: 1000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.loguito-sidebar {
+    display: flex !important;
+    align-items: center;
+    color: var(--negrononegro);
+}
+
+.podria-int {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    color: var(--negrononegro);
+    font-size: 20px;
 }
 
 /* Clase que aplicaremos con JS para mostrarlo */
@@ -301,7 +298,6 @@ footer {
 
 .sidebar a {
     font-family: "Roboto", sans-serif;
-    padding: 5px;
     text-decoration: none;
     font-size: 1.2rem;
     color: var(--negrononegro);
@@ -315,15 +311,85 @@ footer {
 .close-btn {
     transition: 0.5s;
     position: absolute;
-    top: 20px;
-    right: 20px;
     font-size: 2rem;
+    right: 20px;
+    top: 4%;
 }
 
 .close-btn:hover {
     transition: 0.5s;
     transform: rotate(360deg);
     text-shadow: var(--sombra);
+}
+
+.contenido-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.enlaces-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.arrow-box {
+    height: 10%;
+}
+
+.contenedor-enlace {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.div-us {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 10px;
+}
+
+.p-p {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.titulo-us {
+    margin: 0px;
+    font-weight: bolder;
+}
+
+.participantes-us {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: space-between;
+}
+
+.participante-us {
+    margin: 0px;
+}
+
+.rol-us {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.redes-us {
+    display: flex;
+    align-items: row;
+    margin: 0px;
+}
+
+.enlace-us:hover {
+    color: rgb(91, 91, 255);
 }
 
 /* FIN SIDE BAR */
@@ -342,6 +408,7 @@ footer {
 }
 
 .txt-destacar {
+    font-family: "Roboto", sans-serif;
     font-weight: bolder;
 }
 
