@@ -12,6 +12,20 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
+}
+
+/* El contenedor que envuelve todo */
+#main-content {
+    transition: transform 0.3s ease; /* Movimiento suave */
+    width: 100%;
+}
+
+/* Esta clase moverá todo a la derecha */
+/* Si tu sidebar mide 250px, usa 250px aquí */
+#main-content.pushed {
+    transform: translateX(250px);
+    width: calc(100% - 250px);
 }
 
 .diseno-menu {
@@ -271,7 +285,7 @@ footer {
     left: -290px; /* Escondido a la izquierda */
     width: 250px;
     height: 100vh;
-    background: var(--colorfondodos);
+    background: linear-gradient(to bottom, var(--colorfondodos) 0%, var(--colorfondos) 80%);
     transition: 0.3s; /* Animación suave */
     z-index: 1000;
     padding-left: 20px;
@@ -356,13 +370,14 @@ footer {
 
 .p-p {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .titulo-us {
     margin: 0px;
     font-weight: bolder;
+    font-size: 12px;
 }
 
 .participantes-us {
@@ -370,10 +385,13 @@ footer {
     flex-direction: column;
     gap: 0px;
     justify-content: space-between;
+    border-left: 2px solid var(--negrononegro);
+    padding-left: 10px;
 }
 
 .participante-us {
     margin: 0px;
+    font-weight: bolder;
 }
 
 .rol-us {
@@ -495,5 +513,14 @@ li {
     }
     .header-index {
         background-image: url(/img/header-indexmobile.jpg);
+    }
+    #sidebar.active {
+        width: 100%;
+    }
+    .close-btn {
+        right: 75px;
+    }
+    .contenedor-enlace a {
+        font-size: 15px;
     }
 }

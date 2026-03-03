@@ -76,7 +76,8 @@
         </div>
     </div>
 
-    <nav class="nav-index">
+    <div id="main-content">
+        <nav class="nav-index">
         <div style="display: flex; flex-direction: row; align-items: center; gap: 10px; text-align: center;">
             <a href="#" class="menu-btn" id="open-menu"><i class='bx bx-menu' ></i></a>
             <a href="index.html" class="nav-logo" id="subir">iDial</a>
@@ -218,6 +219,9 @@
     <footer>
         <label>Todos los derechos reservados © iDial</label>
     </footer>
+    </div>
+
+    
 
     <script>
         window.addEventListener('scroll', function() {
@@ -230,20 +234,23 @@
         });
 
         const openBtn = document.getElementById('open-menu');
-        const closeBtn = document.getElementById('close-menu');
-        const sidebar = document.getElementById('sidebar');
+const closeBtn = document.getElementById('close-menu');
+const sidebar = document.getElementById('sidebar');
+const mainContent = document.getElementById('main-content'); // Nueva variable
 
-        // Abrir menú
-        openBtn.addEventListener('click', (e) => {
-            e.preventDefault(); // Evita que el enlace recargue la página
-            sidebar.classList.add('active');
-        });
+// Abrir menú
+openBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    sidebar.classList.add('active');
+    mainContent.classList.add('pushed'); // Empuja el contenido
+});
 
-        // Cerrar menú
-        closeBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            sidebar.classList.remove('active');
-        });
+// Cerrar menú
+closeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    sidebar.classList.remove('active');
+    mainContent.classList.remove('pushed'); // Regresa el contenido
+});
 
         const botonArriba = document.getElementById('subir');
 
