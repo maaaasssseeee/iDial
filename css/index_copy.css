@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Momo+Trust+Display&family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+:root {
+    --coloradv: #e9e5cd;
+    --colorfondos: #f5f1da;
+    --colorfondoderechos: #f5e3c6;
+    --colorfondodos: #E5D3B3;
+    --negrononegro: #2c2c2c;
+    --sombra: 0px 0px 20px #000;
+    --sombranav: 0px 0px 20px #0000007e;
+    --sombraetiqueta: 0px 0px 20px #00000041;
+    --titulosinfo: #204051;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* El contenedor que envuelve todo */
+#main-content {
+    transition: transform 0.3s ease; /* Movimiento suave */
+    width: 100%;
+}
+
+/* Esta clase moverá todo a la derecha */
+/* Si tu sidebar mide 250px, usa 250px aquí */
+#main-content.pushed {
+    transform: translateX(250px);
+    width: calc(100% - 250px);
+}
+
+.diseno-menu {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--negrononegro);
+}
+
+.header-index {
+    background-image: url(/img/header-index.jpg);
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-index {
+    background-color: var(--colorfondos);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-shadow: var(--sombranav);
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.img-nav {
+    width: 50px;
+}
+
+.nav-logo {
+    transition: 0.5s;
+    font-family: "Momo Trust Display", sans-serif;
+    color: var(--negrononegro);
+    font-size: 40px;
+    display: flex;
+    font-weight: lighter;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.section-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+}
+
+.div-titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-gato {
+    width: 300px;
+    background-color: var(--sombra);
+}
+
+.titulo-header {
+    font-family: "Momo Trust Display", sans-serif;
+    color: var(--colorfondos);
+    text-shadow: var(--sombra);
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.subtitulo-header {
+    font-family: "Gabarito", sans-serif;
+    text-shadow: var(--sombra);
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--colorfondos);
+}
+
+.nav-logo:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.android-nav {
+    transition: 0.5s;
+    color: var(--negrononegro);
+    font-size: 35px;
+}
+
+.android-nav:hover {
+    transition: 0.5s;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.div-logo-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    will-change: transform;
+    transition: transform 0.5s ease-out;
+}
+
+/* MAIN */
+
+.div-adv {
+    background-color: var(--coloradv);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+    gap: 20px;
+}
+
+.main-informacion {
+    background-color: var(--colorfondos);
+    min-height: 100vh;
+}
+
+.main-contenido {
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+}
+
+.main-titulos {
+    color: var(--titulosinfo);
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 40px;
+}
+
+.main-subtitulos {
+    color: var(--titulosinfo);
+    font-family: "Gabarito", sans-serif;
+    font-size: 20px;
+}
+
+.main-contenido-intro-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-parrafo {
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+}
+
+.info-imagen {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.info-imagen-info {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.info-imagen-imagen {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECTION DESCARGA NUESTRA APP */
+
+.section-descarga {
+    background-image: url(/img/section-descarga.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.section-descarga-texto {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-descarga-enlace {
+    transition: 0.5s;
+    background-color: var(--colorfondos);
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    border-radius: 10px;
+    color: var(--negrononegro);
+}
+
+.section-descarga-enlace:hover {
+    transition: 0.5s;
+    box-shadow: var(--sombra);
+    transform: scale(1.05);
+}
+
+.idial-desc {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: var(--colorfondos);
+    text-shadow: var(--sombra);
+}
+
+/* FOOTER */
+
+footer hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: var(--negrononegro);
+}
+
+footer {
+    margin: 0px;
+}
+
+.footer-p {
+    background-color: var(--colorfondos);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-p p {
+    margin: 0px;
+}
+
+.p-titulo {
+    font-weight: 900;
+    font-size: 30px
+}
+
+.contenedores-participantes {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.contenedor-participante {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nombre-participante {
+    text-align: center;
+    font-weight: bold;
+}
+
+.rol-participante {
+    text-align: center;
+}
+
+.contenedor-redes-participante {
+    display: flex;
+    flex: row;
+    justify-content: center;
+    gap: 5px;
+    color: var(--negrononegro);
+}
+
+.contenedor-redes-participante i {
+    color: var(--negrononegro);
+}
+
+.footer-d {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    background-color: var(--colorfondoderechos);
+    padding: 25px;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--negrononegro);
+}
+
+.footer-d label {
+    font-weight: bold;
+}
+
+/* SIDE BAR */
+
+.bx-menu {
+    color: #000;
+    font-size: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -290px; /* Escondido a la izquierda */
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--colorfondodos) 0%, var(--colorfondos) 80%);
+    transition: 0.3s; /* Animación suave */
+    z-index: 1000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.loguito-sidebar {
+    display: flex !important;
+    align-items: center;
+    color: var(--negrononegro);
+}
+
+.podria-int {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    color: var(--negrononegro);
+    font-size: 20px;
+}
+
+.guia {
+    font-family: "Roboto", sans-serif;
+    color: var(--negrononegro);
+    font-size: 20px;
+}
+
+/* Clase que aplicaremos con JS para mostrarlo */
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--negrononegro);
+    display: block;
+}
+
+.sidebar a:hover {
+    font-weight: bolder;
+}
+
+.close-btn {
+    transition: 0.5s;
+    position: absolute;
+    font-size: 2rem;
+    right: 20px;
+    top: 4%;
+}
+
+.close-btn:hover {
+    transition: 0.5s;
+    text-shadow: var(--sombra);
+}
+
+.contenido-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.enlaces-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.arrow-box {
+    height: 10%;
+}
+
+.contenedor-enlace {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.div-us {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.p-p {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.titulo-us {
+    margin: 0px;
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.participantes-us {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: space-between;
+    border-left: 2px solid var(--negrononegro);
+    padding-left: 10px;
+}
+
+.participante-us {
+    margin: 0px;
+    font-weight: bolder;
+}
+
+.rol-us {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.redes-us {
+    display: flex;
+    align-items: row;
+    margin: 0px;
+}
+
+.enlace-us:hover {
+    color: rgb(91, 91, 255);
+}
+
+/* FIN SIDE BAR */
+
+/* IMAGENES BOX */
+
+.img-box {
+    width: 400px;
+    height: auto;
+}
+
+.imagen-derecha {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.txt-destacar {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+}
+
+li {
+    padding-bottom: 20px;
+}
+
+.section-interesar {
+    background-image: url(/img/section-descarga.png);
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interesate-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 200px;
+}
+
+.box-download {
+    margin: 20px;
+}
+
+.etiqueta-flotante {
+    display: flex;
+    align-items: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Se queda quieto aunque hagas scroll */
+    bottom: 20px;    /* Distancia desde abajo */
+    right: 20px;     /* Distancia desde la derecha */
+    background-color: var(--coloradv); /* O el color de iDial */
+    color: var(--negrononegro);
+    padding: 10px 20px;
+    border-radius: 30px; /* Bordes redondeados tipo pastilla */
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: var(--sombraetiqueta);
+    z-index: 1001;   /* Para que siempre esté por encima de todo */
+    transition: all 0.3s ease; /* Para que el cambio de texto sea suave */
+}
+
+.etiqueta-flotante label {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: bolder;
+}
+
+#main-content.pushed .nav-logo {
+        margin-left: 20px;
+    }
+
+#main-content.pushed .main-contenido {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+
+@media screen and (max-width:500px) {
+    .main-contenido {
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+    }
+    .info-parrafo{
+        font-size: 15px;
+    }
+    .adv {
+        font-size: 10px;
+    }
+    .info-imagen {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .img-box {
+        width: 300px;
+        height: auto;
+    }
+    .info-imagen-imagen {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .titulo-header {
+        font-size: 30px;
+    }
+    .adv {
+        font-size: 13px;
+    }
+    .div-adv {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .interesate-contenido {
+        margin: 30px;
+    }
+    .subtitulo-header {
+        font-size: 15px;
+    }
+    .main-titulos {
+        font-size: 25px;
+    }
+    .logo-gato {
+        width: 200px;
+        height: auto;
+    }
+    .div-logo-titulo {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .section-interesar {
+        background-image: url(/img/section-descargamobile.png);
+    }
+    .header-index {
+        background-image: url(/img/header-indexmobile.jpg);
+    }
+    #sidebar.active {
+        width: 100%;
+        height: 100%;
+    }
+    .close-btn {
+        right: 75px;
+    }
+    .contenedor-enlace a {
+        font-size: 15px;
+    }
+    .p-titulo {
+        font-size: 20px
+    }
+    .nombre-participante {
+        font-size: 15px;
+    }
+    .rol-participante {
+        font-size: 15px;
+    }
+    .contenedores-participantes {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
