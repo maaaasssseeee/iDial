@@ -678,13 +678,6 @@ li {
     .header-index {
         background-image: url(/img/header-indexmobile.jpg);
     }
-    #sidebar.active {
-        width: 100vh;
-        height: 100vh;
-    }
-    .close-btn {
-        right: 75px;
-    }
     .contenedor-enlace a {
         font-size: 14px;
     }
@@ -694,5 +687,19 @@ li {
     }
     #info-imagen-inv {
         flex-direction: column-reverse;
+    }
+    .sidebar.active {
+        height: 100%;
+        width: 100%;
+    }
+    .arrow-box {
+        height: 5%;
+    }
+    .sidebar.active .close-btn {
+        transition: 0.5s;
+        position: absolute;
+        font-size: 20px;
+        left: 20px;
+        top: 25px;
     }
 }
