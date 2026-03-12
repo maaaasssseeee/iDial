@@ -15,6 +15,7 @@
 body {
     margin: 0;
     overflow-x: hidden;
+    background-color: var(--colorfondos);
 }
 
 /* El contenedor que envuelve todo */
@@ -705,7 +706,7 @@ li {
     .sidebar.active .enlaces-sidebar {
         margin-top: 20px;
     }
-    .sidebar.active #indicador-seccion {
+    .sidebar.active .etiqueta-flotante {
         display: none;
     }
 }
