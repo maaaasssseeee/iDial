@@ -183,16 +183,20 @@ body {
 }
 
 .main-contenido {
+    display: flex;
     padding-top: 50px;
     padding-left: 400px;
     padding-right: 400px;
     padding-bottom: 50px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .main-titulos {
     color: var(--titulosinfo);
     font-family: "Momo Trust Display", sans-serif;
     font-size: 40px;
+    text-align: center;
 }
 
 .main-subtitulos {
@@ -210,6 +214,7 @@ body {
 .info-parrafo {
     font-size: 16px;
     text-align: justify;
+    line-height: 1.6;
     font-family: "Roboto", sans-serif;
 }
 
@@ -222,8 +227,7 @@ body {
 
 .info-imagen-info {
     display: flex;
-    flex: 2;
-    align-items: flex-start;
+    flex: 1;
     justify-content: center;
     flex-direction: column;
 }
@@ -231,16 +235,19 @@ body {
 .info-imagen-imagen {
     display: flex;
     flex: 1;
-    align-items: stretch;
-    justify-content: center;
-    height: auto;
-    width: auto;
 }
 
 .info-imagen-imagen img {
-    width: 100%;
     height: 100%;
+    width: 100%;
+    border-radius: 50px;
     object-fit: cover;
+}
+ /*
+.imagen-derecha {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
 }
 
 /* SECTION DESCARGA NUESTRA APP */
@@ -524,12 +531,6 @@ footer {
     height: auto;
 }
 
-.imagen-derecha {
-    width: 100%;
-    height: auto;
-    border-radius: 50px;
-}
-
 .txt-destacar {
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
@@ -596,6 +597,13 @@ li {
     }
 
 
+@media screen and (max-width:900px) {
+    .main-contenido {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+    
 @media screen and (max-width:500px) {
     #open-menu {
         display: flex;
@@ -603,6 +611,15 @@ li {
     }
     #enlace-pc {
         display: none;
+    }
+    .p-titulo {
+        font-size: 16px;
+    }
+    .nombre-participante {
+        font-size: 12px;
+    }
+    .rol-participante {
+        font-size: 12px;
     }
     .main-contenido {
         padding-top: 50px;
@@ -662,26 +679,20 @@ li {
         background-image: url(/img/header-indexmobile.jpg);
     }
     #sidebar.active {
-        width: 100%;
-        height: 100%;
+        width: 100vh;
+        height: 100vh;
     }
     .close-btn {
         right: 75px;
     }
     .contenedor-enlace a {
-        font-size: 15px;
-    }
-    .p-titulo {
-        font-size: 20px
-    }
-    .nombre-participante {
-        font-size: 15px;
-    }
-    .rol-participante {
-        font-size: 15px;
+        font-size: 14px;
     }
     .contenedores-participantes {
         flex-direction: column;
         gap: 10px;
+    }
+    #info-imagen-inv {
+        flex-direction: column-reverse;
     }
 }
