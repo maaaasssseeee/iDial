@@ -579,7 +579,7 @@ li {
     font-family: sans-serif;
     font-size: 14px;
     box-shadow: var(--sombraetiqueta);
-    z-index: 1001;   /* Para que siempre esté por encima de todo */
+    z-index: 999;   /* Para que siempre esté por encima de todo */
     transition: all 0.3s ease; /* Para que el cambio de texto sea suave */
 }
 
@@ -705,8 +705,5 @@ li {
     }
     .sidebar.active .enlaces-sidebar {
         margin-top: 30px;
-    }
-    #main-content.pushed #indicador-seccion {
-        display: none;
     }
 }
