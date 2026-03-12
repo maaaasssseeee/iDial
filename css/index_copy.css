@@ -704,9 +704,9 @@ li {
         top: 25px;
     }
     .sidebar.active .enlaces-sidebar {
-        margin-top: 20px;
+        margin-top: 25px;
     }
-    .sidebar.active .etiqueta-flotante {
+    #main-content.pushed .etiqueta-flotante {
         display: none;
     }
 }
