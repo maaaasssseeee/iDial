@@ -3,80 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index_copy.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/sintomas.css">
     <link rel="stylesheet" href="css/prevencion.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Prevención</title>
+    <title>Prevenir la insuficiencia renal</title>
 </head>
-
 <body>
+    <nav class="nav-index">
+        <div style="display: flex; flex-direction: row; align-items: center; gap: 10px; text-align: center;">
+            <a href="#" class="menu-btn" id="open-menu"><i class='bx bx-menu' ></i></a>
+            <a href="index.html" class="nav-logo">iDial</a>
+        </div>
+        <div>
+            <a href="https://play.google.com/store/games?hl=es_MX"><i class='bx bxl-android android-nav' title="Descargar iDial en Android"></i></a>
+        </div>
+    </nav>
+
     <div id="sidebar" class="sidebar">
-        <div class="arrow-box">
-            <a href="#" class="close-btn" id="close-menu"><i class='bx bx-arrow-back' ></i></a>
-        </div>
-        <div class="contenido-sidebar">
-            <div class="enlaces-sidebar">
-                <label class="podria-int">Podría interesarle...</label>
-                <div class="contenedor-enlace">
-                    <i class='bx bxs-home loguito-sidebar'></i>
-                    <a href="index.html">Página principal</a>
-                </div>
-                <div class="contenedor-enlace">
-                    <i class='bx bxs-first-aid loguito-sidebar'></i>
-                    <a href="sintomas.html">Sintomas</a>
-                </div>
-                <div class="contenedor-enlace">
-                    <i class='bx bxs-injection loguito-sidebar'></i>
-                    <a href="tratamientodp.html">Tratamiento peritoneal</a>
-                </div>
-                <div class="contenedor-enlace">
-                    <i class='bx bxs-injection loguito-sidebar'></i>
-                    <a href="tratamientohd.html">Tratamiento homodiálisis</a>
-                </div>
-                <div class="contenedor-enlace">
-                    <i class='bx bxs-book-alt loguito-sidebar'></i>
-                    <a href="infoextra.html">Más información</a>
-                </div>
-            </div>
-
-            <div class="div-us">
-                <p class="titulo-us">¿Dudas o sugerencias?</p>
-                <div class="p-p">
-                    <div class="participantes-us">
-                        <p class="participante-us">Contacto de 'Nombre'</p>
-                        <p class="rol-us">Redes de contacto de 'Nombre'</p>
-                        <div class="redes-us">
-                            <a href="" class="enlace-us"><i class='bx bxl-linkedin-square'></i></a>
-                            <a href="" class="enlace-us"><i class='bx bxl-twitter'></i></a>
-                            <a href="" class="enlace-us"><i class='bx bxl-gmail'></i></a>
-                            <a href="" class="enlace-us"><i class='bx bxl-github'></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <a href="#" class="close-btn" id="close-menu"><i class='bx bx-arrow-back' ></i></a>
+        <ul class="menu-links">
+            <li><a href="index.html">Regresar a la página principal</a></li>
+            <li><a href="sintomas.html">Sintomas</a></li>
+            <li><a href="#">Tratamiento de la diálisis peritoneal</a></li>
+            <li><a href="#">Tratamiento de una homodiálisis</a></li>
+            <li><a href="#">Información adicional</a></li>
+        </ul>
     </div>
-
-    <div id="main-content">
-        <div class="nav-index">
-            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px; text-align: center;">
-                <a href="#" id="open-menu"><i class='bx bx-menu'></i></a>
-                <a href="index.html" class="nav-logo">iDial</a>
-            </div>
-            <div class="enlaces-nav-bar">
-                <a href="index.html" id="enlace-pc">Página principal</a>
-                <a href="sintomas.html" id="enlace-pc">Sintomas</a>
-                <a href="tratamientodp.html" id="enlace-pc">Tratamiento peritoneal</a>
-                <a href="tratamientohd.html" id="enlace-pc">Tratamiento homodiálisis</a>
-                <a href="infoextra.html" id="enlace-pc">Más información</a>
-            </div>
-            <div>
-                <a href="https://play.google.com/store/games?hl=es_MX"><i class='bx bxl-android android-nav' title="Descargar iDial en Android"></i></a>
-            </div>
-        </div>
-
-        
 
     <header class="header-index">
         <section class="section-titulo">
@@ -90,8 +43,9 @@
         </section>
     </header>
 
-    <main class="main-informacion">
+<main class="main-informacion">
         <div class="main-contenido">
+
             <div class="div-adv">
                 <div style="display: flex; align-items: center; text-align: center; justify-content: center;">
                     <i class='bx bx-error-circle bx-tada'></i>
@@ -105,17 +59,12 @@
             <div class="main-contenido-informacion">
                 <p class="info-parrafo">La insuficiencia renal es, en la mayoría de los casos, una condición que se puede <span class="txt-destacar">prevenir o retrasar</span> significativamente si tomamos el control de nuestra salud hoy mismo. Mantener los riñones sanos no solo garantiza una buena filtración de toxinas, sino que protege directamente nuestro corazón y sistema circulatorio.</p>
                 <p class="info-parrafo">A continuación, estaremos mencionando cuáles son algunas de las medidas preventivas para la insuficiencia renal</p>
-            </div>  
+            </div>        
 
-            <div>
-                <div class="main-contenido-intro-titulo">
-                    <label class="main-titulos">Control de la presión y glucosa</label>
-                </div>
-            </div>
-
-             <div class="info-imagen">
+            <div class="info-imagen">
                 <div class="info-imagen-info">
                     <div style="display: flex; flex-direction: column;">
+                        <label class="main-titulos">Control de la presión y glucosa</label>
                         <p class="info-parrafo">La <span class="txt-destacar">tensión arterial</span> y la <span class="txt-destacar">glucosa</span> en sangre son los dos factores que más impactan la salud renal. Una presión elevada actúa como un flujo de agua a demasiada potencia que termina por romper los delicados filtros del riñón; mantenerla en niveles óptimos es la base para evitar tratamientos invasivos como la diálisis. Por otro lado, la diabetes mal controlada es una de las causas principales de daño renal crónico; monitorear el azúcar mediante una dieta saludable y ejercicio regular es fundamental para que el azúcar en la sangre no desgaste la estructura interna de tus riñones.</p>
                     </div>
 
@@ -126,7 +75,9 @@
                     </div>
                 </div>
                 <div class="info-imagen-imagen">
-                    <img src="img/prevencion-presionglucosa.jpg">
+                    <div class="img-box">
+                        <img src="img/prevencion-presionglucosa.jpg" class="imagen-derecha">
+                    </div>
                 </div>
             </div>
 
@@ -143,15 +94,10 @@
                 </div>
             </div>
 
-            <div>
-                <div class="main-contenido-intro-titulo">
-                    <label class="main-titulos">Vigilancia médica y detección temprana</label>
-                </div>
-            </div>
-
             <div class="info-imagen">
                 <div class="info-imagen-info">
                     <div style="display: flex; flex-direction: column;">
+                        <label class="main-titulos">Vigilancia médica y detección temprana</label>
                         <p class="info-parrafo">A veces, el daño comienza sin dolor. La <span class="txt-destacar">proteinuria</span> (presencia de proteína en la orina) es uno de los primeros gritos de auxilio del riñón. Realizar análisis de orina periódicos, especialmente si se padece diabetes o hipertensión, permite identificar fugas de proteína a tiempo. Detectar este signo de forma temprana permite a los médicos ajustar el tratamiento y frenar el daño antes de que sea irreversible.</p>
                     </div>
 
@@ -179,15 +125,10 @@
                 </div>
             </div>
 
-            <div>
-                <div class="main-contenido-intro-titulo">
-                    <label class="main-titulos">Protección cardiovascular integral</label>
-                </div>
-            </div>
-
             <div class="info-imagen">
                 <div class="info-imagen-info">
                     <div style="display: flex; flex-direction: column;">
+                        <label class="main-titulos">Protección cardiovascular integral</label>
                         <p class="info-parrafo">Los riñones y el corazón trabajan en equipo. El <span class="txt-destacar">control de los niveles de colesterol y triglicéridos</span> es esencial porque, cuando la enfermedad renal progresa, el riesgo de sufrir eventos cardiovasculares aumenta. Mantener las arterias limpias y la sangre fluyendo correctamente es, en última instancia, la mejor forma de asegurar que tus riñones reciban el oxígeno que necesitan para seguir funcionando.</p>
                     </div>
 
@@ -198,11 +139,12 @@
                 </div>
 
                 <div class="info-imagen-imagen">
-                        <img src="img/prevencion-cardio.png">
+                    <div class="img-box">
+                        <img src="img/prevencion-cardio.png" class="imagen-derecha">
+                    </div>
                 </div>
             </div>
         </div>
-        
     </main>
 
     <section class="section-interesar">
@@ -212,64 +154,9 @@
             </div>
         </section>
 
-    <footer>
-        <div class="footer-p">
-            <p class="p-titulo">Sobre nosotros</p>
-            <hr>
-            <div class="contenedores-participantes">
-                <div class="contenedor-participante">
-                    <p class="nombre-participante">Joel Gabriel Gastelum Felix</p>
-                    <p class="rol-participante">Encargado del diseño frontend de 'iDial'</p>
-                    <div class="contenedor-redes-participante">
-                        <a href=""><i class='bx bxl-linkedin-square enlace-us'></i></a>
-                        <a href=""><i class='bx bxl-twitter enlace-us'></i></a>
-                        <a href=""><i class='bx bxl-gmail enlace-us'></i></a>
-                        <a href=""><i class='bx bxl-github enlace-us'></i></a>
-                    </div>
-                </div>
-                <div class="contenedor-participante">
-                    <p class="nombre-participante">Jesús Carlos Esquer Robles</p>
-                    <p class="rol-participante">Encargado de la programación backend de 'iDial'</p>
-                    <div class="contenedor-redes-participante">
-                        <a href=""><i class='bx bxl-linkedin-square enlace-us'></i></a>
-                        <a href=""><i class='bx bxl-twitter enlace-us'></i></a>
-                        <a href=""><i class='bx bxl-gmail enlace-us'></i></a>
-                        <a href=""><i class='bx bxl-github enlace-us'></i></a>
-                    </div>
-                </div>
-                <div class="contenedor-participante">
-                    <p class="nombre-participante">José Manuel Escalante Ayala</p>
-                    <p class="rol-participante">Encargado del diseño del foro de 'iDial'</p>
-                    <div class="contenedor-redes-participante">
-                        <a href=""><i class='bx bxl-linkedin-square enlace-us'></i></a>
-                        <a href=""><i class='bx bxl-twitter enlace-us'></i></a>
-                        <a href=""><i class='bx bxl-gmail enlace-us'></i></a>
-                        <a href=""><i class='bx bxl-github enlace-us'></i></a>
-                    </div>
-                </div>
-                <div class="contenedor-participante">
-                    <p class="nombre-participante">Jerssemany Remírez Ortíz</p>
-                    <p class="rol-participante">Encargada de las ilustraciones para 'iDial'</p>
-                    <div class="contenedor-redes-participante">
-                        <a href=""><i class='bx bxl-linkedin-square enlace-us'></i></a>
-                        <a href=""><i class='bx bxl-twitter enlace-us'></i></a>
-                        <a href=""><i class='bx bxl-gmail enlace-us'></i></a>
-                        <a href=""><i class='bx bxl-github enlace-us'></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-d">
-            <label>Todos los derechos resevados iDial ©</label>
-        </div>
-    </footer>
-
-    </div>
-
-    <div id="indicador-seccion" class="etiqueta-flotante">
-        <label>Prevención</label><i class='bx bxs-message-alt-error'></i>
-    </div>
-    
+        <footer>
+            <label>Todos los derechos reservados © iDial</label>
+        </footer>
 
     <script>
         window.addEventListener('scroll', function() {
@@ -284,20 +171,17 @@
         const openBtn = document.getElementById('open-menu');
         const closeBtn = document.getElementById('close-menu');
         const sidebar = document.getElementById('sidebar');
-        const mainContent = document.getElementById('main-content'); // Nueva variable
 
         // Abrir menú
         openBtn.addEventListener('click', (e) => {
-            e.preventDefault();
+            e.preventDefault(); // Evita que el enlace recargue la página
             sidebar.classList.add('active');
-            mainContent.classList.add('pushed'); // Empuja el contenido
         });
 
         // Cerrar menú
         closeBtn.addEventListener('click', (e) => {
             e.preventDefault();
             sidebar.classList.remove('active');
-            mainContent.classList.remove('pushed'); // Regresa el contenido
         });
 
         const botonArriba = document.getElementById('subir');
@@ -310,7 +194,5 @@
             });
         });
     </script>
-
 </body>
-
 </html>

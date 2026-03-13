@@ -566,7 +566,7 @@ li {
 .etiqueta-flotante {
     display: flex;
     align-items: row;
-    gap: 10px;
+    gap: 3px;
     align-items: center;
     justify-content: center;
     position: fixed; /* Se queda quieto aunque hagas scroll */
