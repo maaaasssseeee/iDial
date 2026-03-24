@@ -666,8 +666,9 @@ li {
         font-size: 25px;
     }
     .logo-gato {
-        width: 200px;
+        width: 180px;
         height: auto;
+        margin-left: 30px;
     }
     .div-logo-titulo {
         flex-direction: column;
