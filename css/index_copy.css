@@ -377,6 +377,7 @@ footer {
 
 .footer-d label {
     font-weight: bold;
+    text-align: center;
 }
 
 /* SIDE BAR */
@@ -706,5 +707,11 @@ li {
     }
     .sidebar.active .enlaces-sidebar {
         margin-top: 30px;
+    }
+    .footer-d {
+        font-size: 12px;
+    }
+    .contenedores-participantes {
+        gap: 30px;
     }
 }
