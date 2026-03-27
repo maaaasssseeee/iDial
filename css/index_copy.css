@@ -598,6 +598,33 @@ li {
         padding-right: 300px;
     }
 
+    /* TRANSICION */
+
+    /* El telón que cubre la pantalla */
+#transition-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Puedes cambiarlo por el color de iDial */
+    z-index: 9999;
+    pointer-events: none; /* No bloquea clics cuando es invisible */
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Estado cuando la página acaba de cargar (Fade In) */
+#transition-layer.fade-in {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Estado para cuando vamos a salir (Fade Out) */
+#transition-layer.fade-out {
+    opacity: 1;
+    pointer-events: all;
+}
 
 @media screen and (max-width:900px) {
     .main-contenido {
