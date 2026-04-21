@@ -204,6 +204,8 @@ body {
     color: var(--titulosinfo);
     font-family: "Gabarito", sans-serif;
     font-size: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .main-contenido-intro-titulo {
@@ -217,38 +219,41 @@ body {
     text-align: justify;
     line-height: 1.6;
     font-family: "Roboto", sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .info-imagen {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
     gap: 50px;
+    justify-content: space-between;
 }
 
 .info-imagen-info {
     display: flex;
-    flex: 1;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
+    min-height: 300px;
+    position: relative;
 }
 
-.info-imagen-imagen {
-    display: flex;
-    flex: 1;
-}
-
-.info-imagen-imagen img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50px;
-    object-fit: cover;
-}
- /*
 .imagen-derecha {
-    width: 100%;
+    float: right;
     height: auto;
+    width: 30%;
     border-radius: 50px;
+    margin: 25px;
+    shape-outside: margin-box;
+}
+
+.imagen-izquierda {
+    float: left;
+    height: auto;
+    width: 30%;
+    border-radius: 50px;
+    margin: 25px;
+    shape-outside: margin-box;
 }
 
 /* SECTION DESCARGA NUESTRA APP */

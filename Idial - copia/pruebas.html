@@ -1,0 +1,77 @@
+<style>
+    body {
+        min-height: 300vh;
+    }
+    /* Botón de rayitas */
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-btn div {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* Estilos del Menú Lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #1a1a1a;
+  padding-top: 60px;
+  transition: transform 0.3s ease; /* Animación suave */
+  transform: translateX(-100%); /* Lo esconde a la izquierda */
+  z-index: 2000;
+}
+
+/* Clase que aplicaremos para mostrarlo */
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.sidebar a:hover {
+  background-color: #333;
+}
+</style>
+
+<body>
+    <button class="menu-btn" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</button>
+
+<nav id="sidebar" class="sidebar">
+  <button class="close-btn" onclick="toggleMenu()">×</button>
+  <a href="#inicio">Inicio</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#proyectos">Proyectos</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+</body>
+
+
+<script>
+    function toggleMenu() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('active');
+}
+</script>
