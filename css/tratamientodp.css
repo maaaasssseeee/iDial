@@ -7,6 +7,11 @@
 
 .section-interesar {
     background-image: url(/img/interesate-tratamiendodp.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info-parrafo span {
